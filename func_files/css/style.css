@@ -7,13 +7,15 @@ body {
 
 main {
   max-width: 600px;
-  margin: 100px auto;
+  margin: 30px auto;
   padding: 10px;
   border-radius: 10px;
   background-color: white;
 }
 
 label {
+  text-align: left;
+  margin-bottom: 3px;
   font-size: 1.4rem;
 }
 
@@ -32,9 +34,11 @@ label {
   border: 0;
   padding: 0;
   font-size: 1.1rem;
+  margin-left: 30px;
 }
 
-select {
+select,
+input[type=date] {
   height: 30px;
   width: 90%;
   border: 0;
@@ -42,16 +46,19 @@ select {
   margin-left: 30px;
 }
 
-input[type=date] {
-  width: 90%;
-  margin-left: 30px;
-}
-
 
 .cont2 {
   width: auto;
+  display: flex;
+  justify-content: flex-start;
   margin: 10px 0px;
 }
+
+.cont2 .cont {
+  width: 100%;
+  text-align: left;
+}
+
 
 button[type=submit] {
   text-align: center;
